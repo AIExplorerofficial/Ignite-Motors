@@ -1,1 +1,2 @@
 # Ignite-Motors
+"Ignite Motors" is a luxury car dealership website, designed to showcase an exclusive collection of high-end automobiles, including renowned brands such as Ferrari. The project aims to provide an immersive online experience for potential clients who seek luxury, performance, and innovation in their vehicle selections. Built using HTML, CSS, and JavaScript, this platform demonstrates web development principles for creating visually appealing, interactive, and user-friendly interfaces that appeal to a high-end clientele.
