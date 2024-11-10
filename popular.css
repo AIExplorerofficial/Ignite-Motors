@@ -1,0 +1,105 @@
+header{
+    background-color: rgb(18, 18, 18);
+    
+    
+    position: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    width: 100%;
+    height: 70px;
+    
+
+}
+.nav{
+    float: right     ;
+    padding: 20px;
+    margin-right: 55px;
+    
+
+    
+}
+
+a{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    
+}
+#active{
+    color: rgb(255, 42, 0);
+    scale: 1.1;
+    transition-duration:0.25s ;
+}
+#logo{
+    float: left;
+    padding: 15px;
+    color: aqua;
+    padding-right: 300px;
+    font-size: 30px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+.nav:hover{
+    color: rgb(102, 255, 0);
+    scale: 1.1;
+    transition-duration:0.25s ;
+}
+#jh{
+    height: 125px;
+}
+
+
+.car-card {
+    background-color: #222;
+    margin-right: 0px;
+    border-radius: 10px;
+    padding: 20px;
+    width: 480px;
+    height: 370px; 
+    text-align: center;
+    transition: 0.3s;
+    color: white;
+}
+td{
+    padding-bottom: 50px;
+}
+.car-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.car-card h3 {
+    margin: 15px 0;
+    font-family: Kanit;
+    transition: 0.5s;
+    
+}
+.car-card:hover h3{
+    color: #00FFFF;
+    letter-spacing: 5px;
+    transition: 0.5s;
+} 
+
+.car-card p {
+    margin: 10px 0;
+    font-family: Barlow;
+}
+
+.car-card:hover {
+    background-color: #333;
+    transform: scale(1.05);
+    border: 1px solid #00FFFF;
+}
+.footer{
+    background-color: rgb(31, 31, 31);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 30px 0px 30px 0px;
+    margin-top: 60px;
+}

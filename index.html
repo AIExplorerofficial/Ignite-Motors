@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GokulProject</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Barlow|Fira Sans|Kanit">
+</head>
+<body>
+    <header>
+        <div class="navigation">
+            <div id="logo" style="font-family: audiowide ;">Ignite Motors</div>
+            <a href="contact.html"><div class="nav">Contact Us</div></a>
+            <a href="popular.html"><div class="nav">Popular</div></a>
+            <a href="about.html"><div class="nav">About</div></a> 
+            <a href=""><div class="nav" id="active">Home</div></a>
+            
+
+        </div>
+    </header>
+    <div class="content">
+        <div class="topic">
+            <div style=" font-weight: 700; margin-top: 75px;">Choose The Best Car</div>
+            <div id="space" style="font-size: 30px; margin-top: 25px; font-family: Fira Sans;"><amg>Ferrari</amg> <afg>SF90</afg> <aug>Stradale</aug> </div>
+            <div style="font-size: 15px; padding-top: 10px;">Plug-in Hybrid Electric Vehicle</div>
+            <img style="width: 500px;"src="ferrarisf90.png" alt="">
+        </div> 
+        <div class="info" >
+            <div id="fl" style="margin-right: 71px;">V8<br><k>Engine</k></div> 
+                
+            <div id="fl" style="margin-right: 250px;">2.5 sec <br><k>0-100 km/h</k></div>
+                
+            <div id="fl">120 kW <br><k>eDrive power</k></div>
+                
+            <div id="fl">1000 cv <br><k>Maximum power @ 7500 rpm</k></div>
+                            
+        </div>
+        <div>
+            <video width="100%" autoplay muted loop>
+                <source src="Ferrari12.mp4" type="video/mp4">
+                
+            Your browser does not support the video tag.
+            </video>
+            
+        </div>
+        <div class="infopara">
+            <div id="fs">The SF90 Stradale is the first ever Ferrari to feature PHEV (Plug-in Hybrid Electric Vehicle) architecture which sees the internal combustion engine integrated with three electric motors, two of which are independent and located on the front axle, with the third at the rear between the engine and the gearbox.</div>
+        </div>
+        
+        <div class="image">
+            <div id="designbox1">
+                <div style="text-align: center; font-family: Kanit; font-size: 50px; font-weight: 600;letter-spacing: 10px;">A    FUTURE-FORWARD    DESIGN</div>
+                <div id="b1" style="margin-top: 20px;"><abbr title="Aeronautical cockpit"><button id="ba"></abbr></button></div>
+                <div id="b2" style="float: left; margin-top: 210px;margin-left: 105px;"><abbr title="Headlights"><button id="bb"></abbr></button></div>
+                <div id="im1" style="float: left;"><img id="image" src="file2.png" alt=""></div>
+                <div id="b3" style="float: left;margin-top: 110px ;"><abbr title="Tail lights"><button id="bc"></abbr></button></div>
+            </div>
+            <div id="designbox">
+                
+                
+                
+            </div>
+        </div>
+        <div class="book" style="margin-top: 30px;">
+            <div><p style="color: aliceblue; font-family: Kanit; font-size: 35px; letter-spacing: 5px; ">Join the Waitlist</p></div>
+            <a href="waitlist.html"><div class="booknow">Join Now</div></a>
+        </div>
+        <div id="end"></div>
+    </div>
+<script>
+    document.getElementById('b2').onclick = function(){big('-300px 120px','bb','<div id="design1"><j id="in">Headlights <br> </j><pu id="in">In an absolute first for a Ferrari, the SF90 Stradale uses matrix LED headlight technology to improve visibility in all driving conditions thanks to active beam control. </pu><img id="in"  src="https://cdn.ferrari.com/cms/network/media/img/Thumb-fari.jpg?apikey=gxEn89eMkieLdSzFrR31mWslcgRpLCpZ" alt=""></div>')}
+    document.getElementById('b3').onclick = function(){big('2500px 120px','bc','<div id="design3" ><j id="in2">Tail lights<br> </j><pu id="in2">The tail lights have also evolved quite radically from Ferrari’s iconic round shape. The eye-catching, more horizontal luminous rings create a more horizontal perception of the tail lights which in turn visually lowers the height of the tail.  </pu><img id="in2"  src="https://cdn.ferrari.com/cms/network/media/img/Thumb-Scarichi.jpg?apikey=gxEn89eMkieLdSzFrR31mWslcgRpLCpZ" alt=""></div>')}
+    document.getElementById('b1').onclick = function(){big('800px 0px','ba','<div id="design2"><j id="in1">Aeronautical cockpit<br> </j><pu id="in1">The SF90 Stradale’s cab-forward design, mid-mounted engine, and lowered cabin create a sleek, aerodynamic profile. A curved windshield, wide track, and forward-shifted, cockpit-like cabin are accentuated by body-colored rear flying buttresses, highlighting its dynamic, balanced proportions. </pu><img id="in1"  src="https://cdn.ferrari.com/cms/network/media/img/Thumb-cabina.jpg?apikey=gxEn89eMkieLdSzFrR31mWslcgRpLCpZ" alt=""></div>')}
+    let t = true
+    
+    function big(a,b,c){
+        if (t){
+            document.getElementById('image').style.transform = 'scale(1.5)'
+            document.getElementById('image').style.transformOrigin = a
+            document.getElementById('image').style.zIndex = '-10'
+            document.getElementById('im1').style.width = '500px'
+            document.getElementById(b).innerHTML = 'X'
+            document.getElementById('designbox').innerHTML = c
+            t = false
+        }
+        else{
+            document.getElementById('image').style.transform = 'scale(1)'
+            document.getElementById('im1').style.width = '1200px'
+            document.getElementById(b).innerHTML = ''
+            document.getElementById('designbox').innerHTML = ''
+            t= true
+        }}
+</script>
+</body>
+</html>
